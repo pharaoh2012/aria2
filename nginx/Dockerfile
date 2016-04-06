@@ -2,7 +2,7 @@ FROM gliderlabs/alpine:3.3
 
 RUN apk-install nginx
 
-COPY nginx.conf /usr/local/nginx/
+COPY nginx.conf /etc/nginx/
 
 VOLUME /home/aria2
 
