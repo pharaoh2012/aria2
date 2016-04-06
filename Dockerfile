@@ -15,7 +15,7 @@ RUN set -xe \
     && adduser -D aria2
 
 COPY aria2.conf /etc/aria2/
-VOLUME /home/aria2 /etc/aria2
+VOLUME /home/aria2
 
 EXPOSE 6800
 CMD set -xe \
