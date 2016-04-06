@@ -7,4 +7,7 @@ COPY nginx.conf /usr/local/nginx/
 VOLUME /home/aria2
 
 EXPOSE 80
+
+RUN nginx -t
+
 CMD ["nginx"]
